@@ -23,8 +23,12 @@ function reverse(str) {
 
 function reverse(str) {
     let reversed = '';
-    for (let char of str) {
-        reversed = char + reversed
+    for (let character of str) {
+        reversed = character + reversed
     };
     return reversed;
+}
+
+function reverse(str) {
+    return str.split('').reduce((rev, char) => char + rev, '');
 }
