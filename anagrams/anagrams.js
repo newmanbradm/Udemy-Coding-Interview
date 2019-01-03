@@ -21,7 +21,7 @@ function anagrams(stringA, stringB) {
             return false
         }
     }
-    
+
     return true;
 }
 
@@ -31,4 +31,13 @@ function buildCharMap(str) {
         charMap[char] = charMap[char] + 1 || 1;
     }
     return charMap;
+}
+
+// advanced solution using array helper (sort)
+function anagrams(stringA, stringB) {
+    return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(str) {
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
 }
