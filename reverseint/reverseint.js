@@ -18,3 +18,9 @@ function reverseInt(n) {
         return parseInt(pos.toString().split('').reverse().join('')) * (-1)
     }
 }
+
+// instructor solution
+function reverseInt(n) {
+    const reversed = n.toString().split('').reverse().join('');
+    return parseInt(reversed) * Math.sign(n)
+}
