@@ -18,3 +18,10 @@ function palindrome(str) {
     let reversed = str.split('').reverse().join('');
     return reversed === str
 }
+
+// advanced, but not ideal because it runs the function more times than it needs to in order to complete the comparison
+function palindrome(str) {
+    str.split('').every((char, i) => {
+        return char === str[str.length - i - 1];
+    });
+}
