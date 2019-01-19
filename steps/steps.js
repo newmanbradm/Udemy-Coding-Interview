@@ -17,6 +17,7 @@
 //       '### '
 //       '####'
 
+// iterative solution
 function steps(n) {
     for (row = 0; row < n; row++) {
         let stair = '';
@@ -32,7 +33,7 @@ function steps(n) {
     }
 }
 
-// add recursive solution
+// recursive solution
 function steps(n, row = 0, stair = '') {
     if (n === row) {
         return;
