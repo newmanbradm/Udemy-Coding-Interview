@@ -39,3 +39,5 @@ function vowels(str) {
 
     return matches ? matches.length : 0;
 }
+
+// match will return an array if there are any matching values, or null if there are none. an array is truthy, null is false. g makes sure we check all matches and don't stop at the first match. i makes the matches case insensitive
