@@ -15,3 +15,8 @@ O(n ^ 2)
 ######Two nested for loops iterating over ***different*** collections?
 O(n x m)
 
+######Sorting?
+O(n x log(n))
+
+######Searching a sorted array? 
+O(log(n))
