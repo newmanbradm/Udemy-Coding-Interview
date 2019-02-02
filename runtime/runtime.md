@@ -1,4 +1,4 @@
-##Contant Time 
+##Constant Time 
 ###1 or O(1)
 No matter how many elements we're working with, the algorithm will always take the same amount of time.
 
